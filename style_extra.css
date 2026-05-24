@@ -10,7 +10,7 @@
     --cor-marca-viva: #0077b6;       
     --cor-marca-contraste: #03045e;    
     --cor-marca-suave: #caf0f8;       
-    --cor-background-body: #0b0c10;    
+    --cor-background-body: #12141b;    
 
     --fonte_padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte_header: 'Bebas Neue', cursive;
@@ -20,12 +20,14 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
     background-color: var(--cor-background-body);
     font-family: var(--fonte_padrao);
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 img{
@@ -39,7 +41,6 @@ header{
     background-image: linear-gradient(to bottom, var(--cor-marca-viva), var(--cor-neutra-escura));
     min-height: 150px;
     padding-top: 30px;
-
     font-family: var(--fonte_header);
     text-align: center;
 }
@@ -63,10 +64,12 @@ nav{
 }
 
 nav > a{
+    display: inline-flex;
     color: var(--cor-neutra-clara);
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     padding: 10px;
+    padding-top: 0px;
 }
 
 nav > a:hover{
