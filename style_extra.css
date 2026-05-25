@@ -124,8 +124,7 @@ article div.borda_img_vid{
 article iframe{
     display: block;
     margin: auto;
-    max-width: 900px;
-    min-width: 370px;
+    width: 80%;
     min-height: 400px;
     padding-top: 20px;
     padding-bottom: 20px;
